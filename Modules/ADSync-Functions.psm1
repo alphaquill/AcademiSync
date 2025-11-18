@@ -4,6 +4,25 @@ Function Generate-PasswordFromDOB {
     return "Changeme$CleanDOB!"
 }
 
+Function Ensure-OUExists {
+    param ([string]$OUPath)
+    if (-not (Get-ADOrganizationalUnit -Filter "DistinguishedName -eq '$OUPath'" -ErrorAction SilentlyContinue)) {
+        $OUName=$OUPath.Split(',')[0].Split('=')[1]
+        $ParentOU=($OUPath -split ',',2)[1]
+        New-ADOrganizationalUnit -Name $OUName -Path $ParentOU
+        Write-Host "Created OU: $OUPath"
+    }
+}
+
+Function Move-StudentToNextYearOU {
+    param ([object]$User,[string]$CurrentYear,[string]$SchoolName,[string]$Domain)
+    $NextYear=[int]$CurrentYear+1
+    $NextOU="OU=$NextYear,OU=Students,OU=$SchoolName,DC=$($Domain.Split('.')[0]),DC=org"
+    Ensure-OUExists -OUPath $NextOU
+    Move-ADObject -Identity $User.DistinguishedName -TargetPath $NextOU
+    Write-Host "Moved student to next year OU: $NextOU"
+}
+
 Function Send-GraphEmail {
     param ([string]$TenantID,[string]$ClientID,[string]$ClientSecret,[string]$To,[string]$Subject,[string]$Body,[string]$Attachment)
     try {
