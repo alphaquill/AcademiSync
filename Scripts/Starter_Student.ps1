@@ -1,1 +1,1 @@
-Similar logic for students with Generate-Username
+Similar logic for students using Generate-Username and OUPaths.Students

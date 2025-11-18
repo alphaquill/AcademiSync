@@ -1,1 +1,1 @@
-Handles staff updates and write-back
+Updates staff attributes and sends email report

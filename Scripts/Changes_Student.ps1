@@ -1,1 +1,1 @@
-Handles student updates
+Updates student attributes

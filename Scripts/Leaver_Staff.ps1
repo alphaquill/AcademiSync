@@ -1,1 +1,1 @@
-Moves staff to archive OU
+Moves staff to Archive OU and sends email report
