@@ -1,0 +1,24 @@
+<SchoolConfig>
+    <School Name="WA">
+        <Domain>washacreacademy.org</Domain>
+        <UsernameFormat>048intakeyearlastnamefirstinitial</UsernameFormat>
+        <OUPaths>
+            <Students>OU=Students,OU=WA,DC=stbedeacademy,DC=org</Students>
+            <StaffTeaching>OU=Teaching,OU=Staff,OU=WA,DC=stbedeacademy,DC=org</StaffTeaching>
+            <StaffSupport>OU=Support,OU=Staff,OU=WA,DC=stbedeacademy,DC=org</StaffSupport>
+            <ArchiveStudents>OU=Archive,OU=Students,OU=WA,DC=stbedeacademy,DC=org</ArchiveStudents>
+            <ArchiveStaff>OU=Archive,OU=Staff,OU=WA,DC=stbedeacademy,DC=org</ArchiveStaff>
+        </OUPaths>
+        <BromcomAPI>
+            <BaseURL>https://api.bromcomcloud.com</BaseURL>
+            <InstanceID>WA_INSTANCE_ID</InstanceID>
+            <ClientID>WA_CLIENT_ID</ClientID>
+            <ClientSecret>WA_CLIENT_SECRET</ClientSecret>
+        </BromcomAPI>
+        <Email>
+            <SMTPServer>smtp.yourdomain.com</SMTPServer>
+            <From>noreply@washacreacademy.org</From>
+            <To>admin@washacreacademy.org</To>
+        </Email>
+    </School>
+</SchoolConfig>

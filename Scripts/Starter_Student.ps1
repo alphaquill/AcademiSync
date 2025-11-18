@@ -1,0 +1,1 @@
+Similar logic for students with Generate-Username

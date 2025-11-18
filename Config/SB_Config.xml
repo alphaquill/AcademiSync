@@ -1,0 +1,24 @@
+<SchoolConfig>
+    <School Name="SB">
+        <Domain>stbedeacademy.org</Domain>
+        <UsernameFormat>intakeyearlastnamefirstinitial</UsernameFormat>
+        <OUPaths>
+            <Students>OU=Students,OU=SB,DC=stbedeacademy,DC=org</Students>
+            <StaffTeaching>OU=Teaching,OU=Staff,OU=SB,DC=stbedeacademy,DC=org</StaffTeaching>
+            <StaffSupport>OU=Support,OU=Staff,OU=SB,DC=stbedeacademy,DC=org</StaffSupport>
+            <ArchiveStudents>OU=Archive,OU=Students,OU=SB,DC=stbedeacademy,DC=org</ArchiveStudents>
+            <ArchiveStaff>OU=Archive,OU=Staff,OU=SB,DC=stbedeacademy,DC=org</ArchiveStaff>
+        </OUPaths>
+        <BromcomAPI>
+            <BaseURL>https://api.bromcomcloud.com</BaseURL>
+            <InstanceID>SB_INSTANCE_ID</InstanceID>
+            <ClientID>SB_CLIENT_ID</ClientID>
+            <ClientSecret>SB_CLIENT_SECRET</ClientSecret>
+        </BromcomAPI>
+        <Email>
+            <SMTPServer>smtp.yourdomain.com</SMTPServer>
+            <From>noreply@stbedeacademy.org</From>
+            <To>admin@stbedeacademy.org</To>
+        </Email>
+    </School>
+</SchoolConfig>
