@@ -1,0 +1,23 @@
+<SchoolConfig>
+    <School Name="TM">
+        <Domain>tongemooracademy.org</Domain>
+        <Company>Tonge Moor Academy</Company>
+        <Department>TM Students</Department>
+        <UsernameFormat>030intakeyearlastnamefirstinitial</UsernameFormat>
+        <OUPaths>
+            <Students>OU=Students,OU=TM,DC=tongemooracademy,DC=org</Students>
+            <ArchiveStudents>OU=Archive,OU=Students,OU=TM,DC=tongemooracademy,DC=org</ArchiveStudents>
+        </OUPaths>
+        <BromcomAPI>
+            <BaseURL>https://api.bromcomcloud.com</BaseURL>
+            <InstanceID>TM_INSTANCE_ID</InstanceID>
+            <ClientID>TM_CLIENT_ID</ClientID>
+            <ClientSecret>TM_CLIENT_SECRET</ClientSecret>
+        </BromcomAPI>
+        <GraphAPI>
+            <TenantID>YOUR_TENANT_ID</TenantID>
+            <ClientID>YOUR_GRAPH_CLIENT_ID</ClientID>
+            <ClientSecret>YOUR_GRAPH_CLIENT_SECRET</ClientSecret>
+        </GraphAPI>
+    </School>
+</SchoolConfig>

@@ -1,0 +1,23 @@
+<SchoolConfig>
+    <School Name="WA">
+        <Domain>washacreacademy.org</Domain>
+        <Company>Washacre Academy</Company>
+        <Department>WA Staff</Department>
+        <OUPaths>
+            <StaffTeaching>OU=Teaching,OU=Staff,OU=WA,DC=washacreacademy,DC=org</StaffTeaching>
+            <StaffSupport>OU=Support,OU=Staff,OU=WA,DC=washacreacademy,DC=org</StaffSupport>
+            <ArchiveStaff>OU=Archive,OU=Staff,OU=WA,DC=washacreacademy,DC=org</ArchiveStaff>
+        </OUPaths>
+        <BromcomAPI>
+            <BaseURL>https://api.bromcomcloud.com</BaseURL>
+            <InstanceID>WA_INSTANCE_ID</InstanceID>
+            <ClientID>WA_CLIENT_ID</ClientID>
+            <ClientSecret>WA_CLIENT_SECRET</ClientSecret>
+        </BromcomAPI>
+        <GraphAPI>
+            <TenantID>YOUR_TENANT_ID</TenantID>
+            <ClientID>YOUR_GRAPH_CLIENT_ID</ClientID>
+            <ClientSecret>YOUR_GRAPH_CLIENT_SECRET</ClientSecret>
+        </GraphAPI>
+    </School>
+</SchoolConfig>
